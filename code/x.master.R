@@ -3,6 +3,7 @@ library(here)
 
 source_path = here("code//")
 
+source(paste0(source_path, "0x.paths.R"))
 source(paste0(source_path, "00.data_processing.R"))
 source(paste0(source_path, "01.fig_1.R"))
 source(paste0(source_path, "02.table_1.R"))
