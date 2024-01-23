@@ -105,6 +105,7 @@ fig_1 = grViz(
 )
 
 ## output -----------------------------------------------------------------
-## https://rdrr.io/cran/vtree/man/grVizToPNG.html#:~:text=First%20the%20grViz%20object%20is%20exported%20to%20an,is%20exported%20as%20a%20PNG%20file%20%28using%20png%3A%3AwritePNG%29.
+
+# https://rdrr.io/cran/vtree/man/grVizToPNG.html#:~:text=First%20the%20grViz%20object%20is%20exported%20to%20an,is%20exported%20as%20a%20PNG%20file%20%28using%20png%3A%3AwritePNG%29.
 
 # vtree::grVizToPNG(fig_1, folder = "G:/Shared drives/OBI Administration/Analytics/1. Projects/Birth equity/Unplanned Ces for FHT/FINAL analytics (NOV 2023)/Figures/", filename = "fig_1.png")
