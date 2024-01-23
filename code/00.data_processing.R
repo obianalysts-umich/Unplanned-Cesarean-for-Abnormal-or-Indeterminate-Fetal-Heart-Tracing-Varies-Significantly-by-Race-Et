@@ -2,15 +2,9 @@
 library(tidyverse)
 library(obstinit)
 
-
-# paths -------------------------------------------------------------------
-
-output_path = "G:/Shared drives/OBI Administration/Analytics/1. Projects/Birth equity/Unplanned Ces for FHT/FINAL analytics (NOV 2023)/"
-
-
 # data process ------------------------------------------------------------
 
-obi = data.table::fread("P:/OBI_abstracted_data/2023-11-20/data/output/sourcetables_OBI_export_recodes.csv")
+obi = data.table::fread(obi_dt_path)
 
 obi_cohort = obi %>% 
   create_obi_cohort() %>% 
@@ -27,8 +21,9 @@ sites_3_yr = obi_cohort %>%
   drop_na() %>% 
   pull(site_name)
 
-
 # cohort for paper --------------------------------------------------------
+
+## pre-process ------------------------------------------------------------
 
 paper_cohort_pre = obi_cohort %>%
   # planned labors for vaginal birth, drop prior inductions, drop missing RE
@@ -237,6 +232,8 @@ paper_cohort_pre = obi_cohort %>%
                  ">=2000")
     )
   ) 
+
+## finalize ---------------------------------------------------------------
 
 paper_cohort = paper_cohort_pre %>%
   select(
