@@ -2,7 +2,7 @@
 
 ## Background
 
-This is the repository housing all analytics for the manuscript currently titled "Association Between Race-Ethnicity and Unplanned Cesarean for Non-Reassuring Fetal Status." 
+This is the repository housing all analytics for the manuscript currently titled "Association Between Race-Ethnicity and Unplanned Cesarean for Non-Reassuring Fetal Status." Authors are Elizabeth Langen, Althea Bourdeau, Jessi Ems, and Lisa Kane Low.
 
 There is little history for this repository as the code was copied from a private parent repo in order to be made publicly available.
 
@@ -31,3 +31,7 @@ The code in this repo is organized in numbered files that should be run in order
   * Race-ethnicity and risk of unplanned Cesarean for FHT, limiting entire cohort to unplanned Cesareans
 * [07.figures](/code/07.figures.R) - create figures 2 (bar graph of NTSV Cesareans for FHT) and 3 (OR plot)
 * [x.master](/code/x.master.R) - Runs all numbered code files
+
+## Output
+
+Output from this code (figures and tables) is saved to a private Google Drive.
