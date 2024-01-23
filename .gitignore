@@ -37,3 +37,6 @@ vignettes/*.pdf
 
 # R project
 *.Rproj
+
+# Paths
+code/0x.paths.R
