@@ -1,3 +1,6 @@
+# obstinit package version to use -----------------------------------------
+
+devtools::install_github("obianalysts-umich/obstinit@c71d24d")
 
 library(tidyverse)
 library(obstinit)
@@ -6,8 +9,8 @@ library(obstinit)
 
 obi = data.table::fread(obi_dt_path)
 
-obi_cohort = obi %>% 
-  create_obi_cohort() %>% 
+obi_cohort = obi %>%
+  create_obi_cohort() %>%
   # start cohort in March 2020 since that is when we started collecting COVID data and those obs will be dropped from the model anyway
   filter(infant_dob_dt >= lubridate::ymd("2020-03-01"),
          birth_year <= 2022)
@@ -258,5 +261,6 @@ paper_cohort = paper_cohort_pre %>%
     prosp_region,
     teaching_status,
     nicu_status,
-    birth_vol_22
+    birth_vol_22,
+    labor_professional_id
   )
